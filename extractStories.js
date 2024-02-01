@@ -1,6 +1,7 @@
 const https = require('https');
 const http = require('http');
-
+//   here we are using https node.js built in module for extract html document data from time.com and then uses http module to create localhost server which is 
+/// running at PORT 3000
 function getHTMLData(url) {
     return new Promise((resolve, reject) => {
         https.get(url, (res) => {
